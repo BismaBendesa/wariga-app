@@ -9,6 +9,6 @@ console.log(now.wuku.name); // show the wuku name
 
 export default function Dashboard() {
   return (
-    <div>Dashboard new</div>
+    <div>Dashboard new abis</div>
   )
 }
