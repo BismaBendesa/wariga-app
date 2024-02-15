@@ -4,10 +4,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import LogoWariga from "../../webp-img/LogoWariga.webp";
 
 const navigation = [
-    { name: "Dashboard", href: "#", current: true },
-    { name: "Ramalan Harian", href: "#", current: false },
-    { name: "Karakter", href: "#", current: false },
-    { name: "Watak", href: "#", current: false },
+    { name: "Ramalan", href: "#", current: true },
+    { name: "Konsultasi", href: "#", current: false },
+    { name: "Tentang Wariga", href: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -19,7 +18,7 @@ export default function NavigasiBar() {
         <Disclosure as="nav" className="bg-[#100D20]">
             {({ open }) => (
                 <>
-                    <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-16">
+                    <div className="mx-auto max-w-8xl px-2 sm:px-6 sm:py-2 lg:px-16">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
@@ -51,7 +50,9 @@ export default function NavigasiBar() {
                                     />
                                 </div>
                                 {/* Navigasi List Item */}
-                                <div className="hidden sm:ml-6 sm:block">
+                            </div>
+                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                                <div className="hidden sm:ml-6 sm:block pr-6">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
                                             <a
@@ -59,8 +60,8 @@ export default function NavigasiBar() {
                                                 href={item.href}
                                                 className={classNames(
                                                     item.current
-                                                        ? "bg-[#FFB400] text-white"
-                                                        : "text-gray-300 hover:bg-[#2D255C] hover:text-white",
+                                                        ? "text-[#E2A000]"
+                                                        : "text-gray-300 hover:text-[#E2A000] ",
                                                     "rounded-md px-3 py-2 text-sm font-medium"
                                                 )}
                                                 aria-current={
@@ -74,11 +75,9 @@ export default function NavigasiBar() {
                                         ))}
                                     </div>
                                 </div>
-                            </div>
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <button
                                     type="button"
-                                    className="relative rounded-full p-1 text-gray hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                    className="relative rounded-full p-1 text-gray hover text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                 >
                                     <span className="absolute -inset-1.5" />
                                     <span className="sr-only">
