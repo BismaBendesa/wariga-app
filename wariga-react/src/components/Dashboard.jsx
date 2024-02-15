@@ -1,7 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useRef } from "react";
 import { BalineseDate } from "balinese-date-js-lib";
 import { useState } from "react";
+import NavigasiBar from "./Navbar/NavigasiBar";
 
 export default function Dashboard() {
     //deklarasi beberapa useHook 'useState'
@@ -102,6 +103,7 @@ export default function Dashboard() {
 
     return (
         <>
+            <NavigasiBar />
             <p className="text-2xl">Ini Dashboard</p>
             <p>Test</p>
             <label>Pilih Tanggal: </label>
