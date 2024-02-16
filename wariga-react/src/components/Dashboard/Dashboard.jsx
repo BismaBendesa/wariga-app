@@ -3,6 +3,9 @@ import React, { useRef } from "react";
 import { BalineseDate } from "balinese-date-js-lib";
 import { useState } from "react";
 import WayangDungulan from "../../webp-img/wayang-dungulan/wayang-dungulan_1x.webp";
+import MataAngin from "../../webp-img/mata-angin/mata-angin_3x.webp";
+import RamalanHarian from "../RamalanHarian/RamalanHarian";
+import RamalanSegitiga from "../SideBarSegitiga/Segitiga";
 
 export default function Dashboard() {
     //deklarasi beberapa useHook 'useState'
@@ -104,9 +107,11 @@ export default function Dashboard() {
     return (
         <>
             <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-16 text-white">
+                {/* section dashboard */}
                 <h1 className="py-6 text-center sm:text-left text-[#0056D7] text-xl lg:text-2xl lg:pb-12 ">
                     Dashboard
                 </h1>
+                {/* Balinese Date User */}
                 <div className="flex flex-col-reverse gap-2 lg:grid lg:grid-cols-12 text-black mb-14">
                     <div className="col-span-12 rounded lg:col-span-8 ">
                         <div className="">
@@ -219,288 +224,188 @@ export default function Dashboard() {
                         <img src={WayangDungulan} alt="Your Company" />
                     </div>
                 </div>
-
-                <div className="flex flex-col-reverse gap-6 lg:grid lg:grid-cols-12 text-black ">
+                {/* section ramalan harian dan segitiga */}
+                <div className="flex flex-col-reverse gap-6 lg:grid lg:grid-cols-12 text-black">
                     <div className="col-span-12 rounded lg:col-span-8 bg-[#1F1B46] rounded-t-2xl ">
-                        <div className="bg-[#10398E] text-[#E2A000] text-4xl m-w-full px-8 py-2 font-bold  rounded-t-2xl">
-                            <p>Ramalan Harian</p>
-                        </div>
-                        <div className="mx-8 text-white">
-                            <div className="my-5 font-light">
-                                <p>
-                                    Ramalan ini dibuat berdasarkan sumber lontar
-                                    dari bali sesuai dengan ilmu yang bernama
-                                    wariga. Ilmu wariga di Bali sesungguhnya
-                                    mengajarkan kepada umat manusia di muka bumi
-                                    ini bahwa benda-benda bersinar di langit
-                                    memengaruhi jagar raya. Benda-benda tersebut
-                                    menjadi daasar perhitungan wariga, sebab
-                                    unsur-unsur yang membangun sistem wariga
-                                    tersebut merupakan simbol benda - benda
-                                    langit tersebut
+                        <RamalanHarian />
+                    </div>
+                    <div className="col-span-12 rounded lg:col-span-4 bg-[#1F1B46] rounded-t-2xl">
+                        <RamalanSegitiga />
+                    </div>
+                </div>
+                {/* section penentuan karakter */}
+                <div className="my-8 bg-[#1F1B46] rounded-t-2xl">
+                    <div className="bg-[#10398E] text-[#E2A000] text-2xl px-8 py-4 font-bold rounded-t-2xl">
+                        <p>Penentuan Karakter</p>
+                    </div>
+                    <div className="flex flex-col-reverse gap-6 lg:grid lg:grid-cols-6 text-white px-8 py-12 ">
+                        <div className="col-span-3">
+                            <div className="flex gap-6 w-full m-auto">
+                                <div className="flex flex-col items-center bg-[#10398E] text-xl font-thin rounded-lg text-center px-24 py-10">
+                                    <p>Tis</p>
+                                </div>
+                                <div className="flex flex-col items-center bg-[#FFB400] text-xl font-bold rounded-lg text-center px-24 py-10">
+                                    <p>Anget</p>
+                                </div>
+                            </div>
+                            <div className="mt-6">
+                                <h4 className="text-lg font-medium">Tis</h4>
+
+                                <p className="font-light mb-6">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Soluta unde officiis odit
+                                    ut tempora aspernatur est asperiores
+                                    ratione, voluptatem eius repudiandae rem
+                                    iste quod itaque illum dignissimos velit
+                                    atque aperiam accusantium ea! Nesciunt
+                                    eveniet nostrum explicabo, at officiis
+                                    natus, exercitationem hic mollitia saepe
+                                    enim aperiam ratione quis deleniti beatae
+                                    quasi illum eligendi esse velit culpa. Fugit
+                                    similique, mollitia ipsum excepturi incidunt
+                                </p>
+                                <p className="font-light">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. A consequuntur reiciendis
+                                    deserunt odio similique ipsum perferendis
+                                    recusandae voluptas atque accusantium
+                                    dolorum repellat illo debitis, doloremque
+                                    aliquid voluptatum nihil minima neque modi
+                                    ducimus! Nam, mollitia officiis? Quibusdam,
+                                    laboriosam! Nisi dicta at, consequuntur hic
                                 </p>
                             </div>
-                            <div className="my-8">
-                                <h3 className="text-xl font-bold">
-                                    Riwayat Ramalan
-                                </h3>
-                                <div className="flex my-4 gap-8">
-                                    <div className="flex flex-col items-center">
-                                        <div className="w-14 bg-[#10398E] text-xl rounded-lg text-center p-2">
-                                            <p>04 Feb</p>
-                                        </div>
-                                        <p className="font-thin text-sm mt-2">
-                                            2 Hari lalu
-                                        </p>
-                                    </div>
-                                    <div className="flex flex-col items-center">
-                                        <div className="w-14 bg-[#10398E] text-xl rounded-lg text-center p-2">
-                                            <p>05 Feb</p>
-                                        </div>
-                                        <p className="font-thin text-sm mt-2">
-                                            1 Hari lalu
-                                        </p>
-                                    </div>
-                                    <div className="flex flex-col items-center">
-                                        <div className="w-14 bg-[#FFB400] text-xl rounded-lg text-center p-2 shadow-xl shadow-blue-400/75">
-                                            <p>06 Feb</p>
-                                        </div>
-                                        <p className="font-thin text-sm mt-2">
-                                            Hari Ini
-                                        </p>
-                                    </div>
-                                    <div className="flex flex-col items-center">
-                                        <div className="w-14 bg-[#10398E] text-xl rounded-lg text-center p-2">
-                                            <p>07 Feb</p>
-                                        </div>
-                                        <p className="font-thin text-sm mt-2">
-                                            Besok
-                                        </p>
-                                    </div>
-                                    <div className="flex flex-col items-center">
-                                        <div className="w-14 bg-[#10398E] text-xl rounded-lg text-center p-2">
-                                            <p>08 Feb</p>
-                                        </div>
-                                        <p className="font-thin text-sm mt-2">
-                                            Lusa
-                                        </p>
-                                    </div>
-                                </div>
+                        </div>
+                        <div className="col-span-3 m-auto w-4/5">
+                            <img src={MataAngin} alt="" />
+                        </div>
+                    </div>
+                </div>
+                {/* section watak dan penyakit */}
+                <div className="gap-6 lg:grid lg:grid-cols-12 text-black mb-12 my-8 rounded-t-2xl">
+                    <div className="col-span-12 lg:col-span-6 ">
+                        <div className="bg-[#10398E] text-[#E2A000] text-2xl px-8 py-4 font-bold rounded-t-2xl">
+                            <p>Watak</p>
+                        </div>
+                        <div className="bg-[#1F1B46] px-8 py-4 text-white">
+                            <div className="py-4">
+                                <h4 className="text-lg">Keras Kepala</h4>
+                                <p className="text-base font-thin">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Aperiam nobis corrupti
+                                    nesciunt eos fugiat fuga asperiores quis!
+                                    Doloribus sequi nemo labore laborum
+                                    voluptatibus iusto ea illum. Commodi placeat
+                                    repudiandae totam?
+                                </p>
                             </div>
-                            <div className="">
-                                <div>
-                                    <h3 className="text-xl font-bold">
-                                        Hasil Perhitungan Ramalan Hari Ini
-                                    </h3>
-                                    <div className="flex flex-wrap my-4 gap-3">
-                                        <div className="flex flex-col items-center w-14 bg-[#10398E] text-xl font-thin rounded-lg text-center px-16 py-10">
-                                            <p>Guru</p>
-                                        </div>
-                                        <div className="flex flex-col items-center w-14 bg-[#FFB400] text-xl font-bold rounded-lg text-center px-16 py-10 shadow-xl shadow-blue-400/50">
-                                            <p>Ratu</p>
-                                        </div>
-                                        <div className="flex flex-col items-center w-14 bg-[#10398E] text-xl font-thin rounded-lg text-center px-16 py-10">
-                                            <p>Lara</p>
-                                        </div>
-                                        <div className="flex flex-col items-center w-14 bg-[#10398E] text-xl font-thin rounded-lg text-center px-16 py-10">
-                                            <p>Pati</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="my-6">
-                                    <h4 className="text-lg font-medium">
-                                        Ratu
-                                    </h4>
-                                    <p className="font-light">
-                                        Ratu adalah kondisi dimana anda sedang
-                                        begini dan begitu. Saya perlu teks yang
-                                        menjelaskan mengenai ratu ini mungkin
-                                        disini akan diberikan penjelasan yang
-                                        singkat mengenai bagaimana maksud dari
-                                        ratu ini dan juga memberikan user
-                                        pengertian.
-                                    </p>
-                                </div>
-                                <div className="my-6">
-                                    <h4 className="text-lg font-medium">
-                                        Hal yang baik untuk dilakukan:
-                                    </h4>
-                                    <ul className="flex flex-wrap list-disc mx-6 w-80 gap-2 font-light">
-                                        <li className="m-w-full w-40">
-                                            Bercocok Tanam
-                                        </li>
-                                        <li>Berlibur</li>
-                                        <li className="m-w-full w-40">
-                                            Bersih-bersih
-                                        </li>
-                                        <li>Memotong rambut</li>
-                                        <li className="m-w-full w-40">
-                                            Belajar
-                                        </li>
-                                        <li>Berkompetisi</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4 className="text-lg font-medium">
-                                        Hal yang baik untuk dilakukan:
-                                    </h4>
-                                    <ul className="flex flex-wrap list-disc mx-6 w-80 gap-2 font-light">
-                                        <li className="m-w-full w-40">
-                                            Bercocok Tanam
-                                        </li>
-                                        <li>Berlibur</li>
-                                        <li className="m-w-full w-40">
-                                            Bersih-bersih
-                                        </li>
-                                        <li>Memotong rambut</li>
-                                        <li className="m-w-full w-40">
-                                            Belajar
-                                        </li>
-                                        <li>Berkompetisi</li>
-                                    </ul>
-                                </div>
+                            <div className="py-4">
+                                <h4 className="text-lg">Keras Kepala</h4>
+                                <p className="text-base font-thin">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Aperiam nobis corrupti
+                                    nesciunt eos fugiat fuga asperiores quis!
+                                    Doloribus sequi nemo labore laborum
+                                    voluptatibus iusto ea illum. Commodi placeat
+                                    repudiandae totam?
+                                </p>
+                            </div>
+                            <div className="py-4">
+                                <h4 className="text-lg">Keras Kepala</h4>
+                                <p className="text-base font-thin">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Aperiam nobis corrupti
+                                    nesciunt eos fugiat fuga asperiores quis!
+                                    Doloribus sequi nemo labore laborum
+                                    voluptatibus iusto ea illum. Commodi placeat
+                                    repudiandae totam?
+                                </p>
+                            </div>
+                            <div className="py-4">
+                                <h4 className="text-lg">Keras Kepala</h4>
+                                <p className="text-base font-thin">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Aperiam nobis corrupti
+                                    nesciunt eos fugiat fuga asperiores quis!
+                                    Doloribus sequi nemo labore laborum
+                                    voluptatibus iusto ea illum. Commodi placeat
+                                    repudiandae totam?
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-12 rounded lg:col-span-4 bg-[#1F1B46] rounded-t-2xl">
-                        <div className="bg-[#E2A000] text-[#10398E] text-4xl m-w-full px-8 py-2 font-bold  rounded-t-2xl">
-                            <p className="text-4xl">Segitiga Ramalan</p>
+                    <div className="col-span-12 lg:col-span-6 ">
+                        <div className="bg-[#10398E] text-[#E2A000] text-2xl px-8 py-4 font-bold rounded-t-2xl">
+                            <p>Penyakit</p>
                         </div>
-                        <div className="mx-8 text-white">
-                            {/* Judul side bar segitiga */}
-                            <div className="my-5 font-light">
-                                <p>
-                                    Mungkin bisa diberikan sedikit penjelaasan
-                                    dan asal dari teori perhitungan ini. Berikan
-                                    juga output yang akan diterima user dengan
-                                    perhitungan ini.
+                        <div className="bg-[#1F1B46] px-8 py-4 text-white">
+                            <div className="py-4">
+                                <h4 className="text-lg">Keras Kepala</h4>
+                                <p className="text-base font-thin">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Aperiam nobis corrupti
+                                    nesciunt eos fugiat fuga asperiores quis!
+                                    Doloribus sequi nemo labore laborum
+                                    voluptatibus iusto ea illum. Commodi placeat
+                                    repudiandae totam?
                                 </p>
                             </div>
-                            {/* gambar segitiga */}
-                            <div className="grid grid-cols-4 bg-white content-center grid-row-3 gap-x-2 gap-y-2">
-                                <div className="bg-gray-400 w-full h-14 relative">
-                                    {/* <div className="absolute top-0 left-[40%] w-full h-full border-l-4 border-red-400 skew-x-[45deg]"></div> */}
-                                </div>
-                                <div className="bg-gray-400 w-full h-14 relative"></div>
-                                <div className="bg-gray-400 w-full h-14 relative"></div>
-                                <div className="bg-gray-400 w-full h-14 relative">
-                                    {/* <div className="absolute top-0 left-[60%] w-full h-full border-l-4 border-red-400 -skew-x-[45deg]"></div> */}
-                                </div>
-                                <div className="col-span-2 bg-gray-400 w-full h-14 relative">
-                                    {/* <div className="absolute  top-[-20%] right-[45.2%]  h-24 border-l-4 border-red-400 skew-x-[45deg]"></div> */}
-                                </div>
-                                <div className="col-span-2 bg-gray-400 w-full h-14 relative">
-                                    {/* <div className="absolute  top-[-20%] left-[47.3%]  h-24 border-l-4 border-red-400 -skew-x-[45deg]"></div> */}
-                                    {/* <div className="absolute  bottom-[-42%]  h-12 border-l-7 border-red-400 rotate-[90deg]"></div> */}
-                                </div>
-                                <div className="col-span-4 bg-gray-400 w-full h-14 relative text-center pt-3">
-                                    5
-                                    {/* <div className="absolute  top-0 right-[37.5%]  h-full border-l-4 border-red-400 -skew-x-[45deg]"></div> */}
-                                    {/* <div className="absolute  top-0 left-[38.5%]  h-full border-l-4 border-red-400 skew-x-[45deg]"></div> */}
-                                    {/* <div className="absolute  bottom-[-42%] left-[50%] h-12 border-l-2 border-red-400 rotate-[90deg]"></div> */}
-                                </div>
+                            <div className="py-4">
+                                <h4 className="text-lg">Keras Kepala</h4>
+                                <p className="text-base font-thin">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Aperiam nobis corrupti
+                                    nesciunt eos fugiat fuga asperiores quis!
+                                    Doloribus sequi nemo labore laborum
+                                    voluptatibus iusto ea illum. Commodi placeat
+                                    repudiandae totam?
+                                </p>
                             </div>
-                            {/* gambar segitiga */}
-                            <div className="grid grid-cols-4 bg-white content-center grid-row-3 gap-x-2 gap-y-2 my-8    ">
-                                <div className="bg-gray-400 w-full h-14 relative">
-                                    {/* <div className="absolute top-0 left-[40%] w-full h-full border-l-4 border-red-400 skew-x-[45deg]"></div> */}
-                                </div>
-                                <div className="bg-gray-400 w-full h-14 relative"></div>
-                                <div className="bg-gray-400 w-full h-14 relative"></div>
-                                <div className="bg-gray-400 w-full h-14 relative">
-                                    {/* <div className="absolute top-0 left-[60%] w-full h-full border-l-4 border-red-400 -skew-x-[45deg]"></div> */}
-                                </div>
-                                <div className="col-span-2 bg-gray-400 w-full h-14 relative">
-                                    {/* <div className="absolute  top-[-20%] right-[45.2%]  h-24 border-l-4 border-red-400 skew-x-[45deg]"></div> */}
-                                </div>
-                                <div className="col-span-2 bg-gray-400 w-full h-14 relative">
-                                    {/* <div className="absolute  top-[-20%] left-[47.3%]  h-24 border-l-4 border-red-400 -skew-x-[45deg]"></div> */}
-                                    {/* <div className="absolute  bottom-[-42%]  h-12 border-l-7 border-red-400 rotate-[90deg]"></div> */}
-                                </div>
-                                <div className="col-span-4 bg-gray-400 w-full h-14 relative text-center pt-3">
-                                    5
-                                    {/* <div className="absolute  top-0 right-[37.5%]  h-full border-l-4 border-red-400 -skew-x-[45deg]"></div> */}
-                                    {/* <div className="absolute  top-0 left-[38.5%]  h-full border-l-4 border-red-400 skew-x-[45deg]"></div> */}
-                                    {/* <div className="absolute  bottom-[-42%] left-[50%] h-12 border-l-2 border-red-400 rotate-[90deg]"></div> */}
-                                </div>
+                            <div className="py-4">
+                                <h4 className="text-lg">Keras Kepala</h4>
+                                <p className="text-base font-thin">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Aperiam nobis corrupti
+                                    nesciunt eos fugiat fuga asperiores quis!
+                                    Doloribus sequi nemo labore laborum
+                                    voluptatibus iusto ea illum. Commodi placeat
+                                    repudiandae totam?
+                                </p>
                             </div>
-                            {/* Penjelasan hasil segitiga */}
-                            <div className="grid grid-cols-2 lg:flex lg:flex-col w-full gap-y-8 gap-x-4 mb-12">
-                                <div className="flex w-full lg:w-full">
-                                    <div className="mr-3">
-                                        <p className="border-2 border-[#00FFF0] p-2.5 font-bold text-lg text-[#00FFF0]">
-                                            8
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-lg font-bold">
-                                            Mental Block
-                                        </h4>
-                                        <p className="font-thin font-md">
-                                            Disini bisa dijelaskan arti dari
-                                            setiap angka yang ada dan dijelaskan
-                                            juga makna mental block
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex w-full lg:w-full">
-                                    <div className="mr-3">
-                                        <p className="border-2 border-[#F25CFF] p-2.5 font-bold text-lg text-[#F25CFF]">
-                                            6
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-lg font-bold">
-                                            Mental
-                                        </h4>
-                                        <p className="font-thin font-md">
-                                            Disini bisa dijelaskan arti dari
-                                            setiap angka yang ada dan dijelaskan
-                                            juga makna mental block
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex w-full lg:w-full">
-                                    <div className="mr-3">
-                                        <p className="border-2 border-[#FFB400] p-2.5 font-bold text-lg text-[#FFB400]">
-                                            5
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-lg font-bold">
-                                            Core Number
-                                        </h4>
-                                        <p className="font-thin font-md">
-                                            Disini bisa dijelaskan arti dari
-                                            setiap angka yang ada dan dijelaskan
-                                            juga makna mental block
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="flex w-full lg:w-full">
-                                    <div className="mr-3">
-                                        <p className="border-2 border-[#37BA15] p-2.5 font-bold text-lg text-[#37BA15] ">
-                                            6
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-lg font-bold">
-                                            Future Number
-                                        </h4>
-                                        <p className="font-thin font-md">
-                                            Disini bisa dijelaskan arti dari
-                                            setiap angka yang ada dan dijelaskan
-                                            juga makna mental block
-                                        </p>
-                                    </div>
-                                </div>
+                            <div className="py-4">
+                                <h4 className="text-lg">Keras Kepala</h4>
+                                <p className="text-base font-thin">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Aperiam nobis corrupti
+                                    nesciunt eos fugiat fuga asperiores quis!
+                                    Doloribus sequi nemo labore laborum
+                                    voluptatibus iusto ea illum. Commodi placeat
+                                    repudiandae totam?
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                {/* section kesimpulan */}
+                <div className="gap-6 lg:grid lg:grid-cols-12 text-black mb-14 my-8 rounded-t-2xl">
+                    <div className="col-span-12 ">
+                        <div className="bg-[#10398E] text-[#E2A000] text-2xl px-8 py-4 font-bold rounded-t-2xl">
+                            <p>Kesimpulan</p>
+                        </div>
+                        <div className="bg-[#1F1B46] px-8 py-4 text-white">
+                            <p className="text-base font-thin">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Aperiam nobis corrupti
+                                nesciunt eos fugiat fuga asperiores quis!
+                                Doloribus sequi nemo labore laborum voluptatibus
+                                iusto ea illum. Commodi placeat repudiandae
+                                totam?
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div>
-                    <p className="text-2xl">Ini Dashboard</p>
-                    <p>Test</p>
                     <label>Pilih Tanggal: </label>
                     <input
                         type="date"
