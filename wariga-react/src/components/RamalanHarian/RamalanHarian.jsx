@@ -9,6 +9,7 @@ export default function RamalanHarian() {
             </div>
             <div className="mx-8 text-white">
                 <div className="my-5 font-light">
+                    w
                     <p>
                         Ramalan ini dibuat berdasarkan sumber lontar dari bali
                         sesuai dengan ilmu yang bernama wariga. Ilmu wariga di

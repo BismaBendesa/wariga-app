@@ -1,11 +1,12 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { BalineseDate } from "balinese-date-js-lib";
 import { useState } from "react";
 import WayangDungulan from "../../webp-img/wayang-dungulan/wayang-dungulan_1x.webp";
 import MataAngin from "../../webp-img/mata-angin/mata-angin_3x.webp";
 import RamalanHarian from "../RamalanHarian/RamalanHarian";
 import RamalanSegitiga from "../SideBarSegitiga/Segitiga";
+import { getTanggalLahirAll } from "../../service/tanggal_lahir.js";
 
 export default function Dashboard() {
     //deklarasi beberapa useHook 'useState'
@@ -14,6 +15,22 @@ export default function Dashboard() {
     const [resultIndonesia, setResultIndonesia] = useState("");
     const [resultBalinese, setResultBalinese] = useState("");
     const [bekelKahuripan, setBekelKahuripan] = useState("");
+
+    const [wewaran, setWewaran] = useState([]);
+
+    async function funcGetTanggalLahir() {
+        try {
+            const result = await getTanggalLahirAll();
+            setWewaran(result.data.data[0]);
+        } catch (error) {
+            console.error("Error Fetching Data:", error);
+        }
+    }
+
+    useEffect(() => {
+        funcGetTanggalLahir();
+        console.log(wewaran);
+    }, []);
 
     //deklarasi tanggal hari ini dan menyesuaikan dengan waktu kalender bali
     const todayDate = new BalineseDate();
@@ -47,6 +64,50 @@ export default function Dashboard() {
 
             const userDate = new BalineseDate(new Date(selectedDate));
             // console.log(userDate);
+            const balineseDateUser = {
+                dwiWara: {
+                    name: userDate.dwiWara.name,
+                    urip: userDate.dwiWara.urip,
+                },
+                triWara: {
+                    name: userDate.ekaWara.name,
+                    urip: userDate.ekaWara.name,
+                },
+                caturWara: {
+                    name: userDate.caturWara.name,
+                    urip: userDate.caturWara.urip,
+                },
+                pancaWara: {
+                    name: userDate.pancaWara.name,
+                    urip: userDate.pancaWara.urip,
+                },
+                sadWara: {
+                    name: userDate.sadWara.name,
+                    urip: userDate.sadWara.urip,
+                },
+                saptaWara: {
+                    name: userDate.saptaWara.name,
+                    urip: userDate.saptaWara.urip,
+                },
+                astaWara: {
+                    name: userDate.astaWara.name,
+                    urip: userDate.astaWara.urip,
+                },
+                sangaWara: {
+                    name: userDate.sangaWara.name,
+                    urip: userDate.sangaWara.urip,
+                },
+                dasaWara: {
+                    name: userDate.dasaWara.name,
+                    urip: userDate.dasaWara.urip,
+                },
+                lintang: userDate.lintang.name,
+                sasih: userDate.sasih.name,
+                wukuUser: userDate.wuku.name,
+                saka: userDate.saka,
+            };
+            console.log(balineseDateUser);
+
             const pancaWaraUser = {
                 name: userDate.pancaWara.name,
                 urip: userDate.pancaWara.urip,
@@ -60,12 +121,13 @@ export default function Dashboard() {
             const wukuUser = userDate.wuku.name;
 
             // Menampilkan hasil dalam bentuk kalender bali
-            const resultBalinese = `Hari lahir anda ${saptaWaraUser.name} dengan urip ${saptaWaraUser.urip} disertai Panca Wara anda: ${pancaWaraUser.name} dengan urip  ${pancaWaraUser.urip}, dan Wuku anda ${wukuUser}`;
+            const resultBalinese = `Hari lahir anda ${balineseDateUser.pancaWara.name} dengan urip ${saptaWaraUser.urip} disertai Panca Wara anda: ${pancaWaraUser.name} dengan urip  ${pancaWaraUser.urip}, dan Wuku anda ${wukuUser}`;
             setResultBalinese(resultBalinese);
 
             // Menampilkan hasil dalam bentuk bahasa indonesia
             const resultIndonesia = `Anda memilih tanggal: ${day} ${month} ${year}`;
             setResultIndonesia(resultIndonesia);
+            console.log(resultIndonesia);
 
             // const bekelKahuripan = pancaWaraUser.urip + saptaWaraUser.urip;
             const bekelKahuripan = (uripUser, uripHariIni) => {
@@ -129,7 +191,7 @@ export default function Dashboard() {
                                         Tanggal Lahir:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
-                                        Sinta
+                                        {wewaran.asta_wara}
                                     </p>
                                 </div>
                                 <div className="w-32">
