@@ -1,10 +1,12 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import Login from "./components/Login";
-import NotFound from "./components/NotFound";
+import Login from "./pages/Login/Login";
+import NotFound from "./pages/NotFound";
 import DefaultLayout from "./layouts/DefaultLayout";
 import GuestLayout from "./layouts/GuestLayout";
-import Register from "./components/Register";
-import Dashboard from "./components/DashboardPage";
+import Register from "./pages/Register/Register";
+import Dashboard from "./pages/Dashboard/DashboardPage";
+import ForgotPassword from "./pages/LupaPass/ForgotPassword";
+import ResetPass from "./pages/ResetPass/ResetPass";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
             {
                 path: "/dashboard",
                 element: <Dashboard />,
+            },
+            {
+                path: "/lupa-password",
+                element: <ForgotPassword />,
+            },
+            {
+                path: "/reset-password",
+                element: <ResetPass />,
             },
         ],
     },

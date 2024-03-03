@@ -4,12 +4,11 @@ import React from "react";
 export default function RamalanHarian() {
     return (
         <>
-            <div className="bg-[#10398E] text-[#E2A000] text-2xl m-w-full px-8 py-4 font-bold  rounded-t-2xl">
+            <div className="bg-[#10398E] text-[#E2A000] text-2xl m-w-full px-8 py-4 font-bold rounded-t-2xl">
                 <p>Ramalan Harian</p>
             </div>
             <div className="mx-8 text-white">
                 <div className="my-5 font-light">
-                    w
                     <p>
                         Ramalan ini dibuat berdasarkan sumber lontar dari bali
                         sesuai dengan ilmu yang bernama wariga. Ilmu wariga di
