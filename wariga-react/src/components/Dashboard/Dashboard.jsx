@@ -5,6 +5,7 @@ import { useState } from "react";
 import WayangDungulan from "../../webp-img/wayang-dungulan/wayang-dungulan_1x.webp";
 import MataAngin from "../../webp-img/mata-angin/mata-angin_3x.webp";
 import RamalanHarian from "../RamalanHarian/RamalanHarian";
+import Bintang from "../../webp-img/bintang/bintang_3x.webp";
 import RamalanSegitiga from "../SideBarSegitiga/Segitiga";
 import { getTanggalLahirAll } from "../../service/tanggal_lahir.js";
 
@@ -170,9 +171,16 @@ export default function Dashboard() {
         <>
             <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-16 text-white">
                 {/* section dashboard */}
-                <h1 className="py-6 text-center sm:text-left text-[#0056D7] text-xl lg:text-2xl lg:pb-12 ">
-                    Dashboard
-                </h1>
+                <div>
+                    <h1 className="py-6 text-center sm:text-left text-[#0056D7] text-xl lg:text-2xl lg:pb-12 ">
+                        Dashboard
+                    </h1>
+                    <img
+                        src={Bintang}
+                        alt="Gambar Bintang"
+                        className="fixed -z-10 mt-[-100px]"
+                    />
+                </div>
                 {/* Balinese Date User */}
                 <div className="flex flex-col-reverse gap-2 lg:grid lg:grid-cols-12 text-black mb-14">
                     <div className="col-span-12 rounded lg:col-span-8 ">
@@ -283,7 +291,11 @@ export default function Dashboard() {
                         </div>
                     </div>
                     <div className="col-span-12 rounded lg:col-span-4 m-auto">
-                        <img src={WayangDungulan} alt="Your Company" />
+                        <img
+                            src={WayangDungulan}
+                            alt="Gambar Wayang Dungulan"
+                            className="relative z-10"
+                        />
                     </div>
                 </div>
                 {/* section ramalan harian dan segitiga */}

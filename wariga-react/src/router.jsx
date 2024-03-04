@@ -5,8 +5,10 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import GuestLayout from "./layouts/GuestLayout";
 import Register from "./pages/Register/Register";
 import Dashboard from "./pages/Dashboard/DashboardPage";
-import ForgotPassword from "./pages/LupaPass/ForgotPassword";
-import ResetPass from "./pages/ResetPass/ResetPass";
+import ForgotPassword from "./pages/Password/ForgotPassword";
+import ResetPass from "./pages/Password/ResetPass";
+import Konsultasi from "./pages/Konsultasi/Konsultasi";
+import LandingPage from "./pages/LandingPage";
 
 const router = createBrowserRouter([
     {
@@ -15,7 +17,11 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Navigate to="/dashboard" />,
+                element: <Navigate to="/wariga" />,
+            },
+            {
+                path: "/wariga",
+                element: <LandingPage />,
             },
             {
                 path: "/dashboard",
@@ -28,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: "/reset-password",
                 element: <ResetPass />,
+            },
+            {
+                path: "/konsultasi",
+                element: <Konsultasi />,
             },
         ],
     },

@@ -4,9 +4,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import LogoWariga from "../../webp-img/LogoWariga.webp";
 
 const navigation = [
-    { name: "Ramalan", href: "#", current: true },
-    { name: "Konsultasi", href: "#", current: false },
-    { name: "Tentang Wariga", href: "#", current: false },
+    { name: "Ramalan", href: "/dashboard", current: false },
+    { name: "Konsultasi", href: "/konsultasi", current: false },
+    { name: "Tentang Wariga", href: "/tentang-wariga", current: false },
 ];
 
 function classNames(...classes) {
@@ -18,7 +18,7 @@ export default function NavigasiBar() {
         <Disclosure as="nav" className="bg-[#100D20]">
             {({ open }) => (
                 <>
-                    <div className="mx-auto max-w-8xl px-2 sm:px-6 sm:py-2 lg:px-16">
+                    <div className="mx-auto max-w-8xl px-2 sm:px-6 sm:py-2 lg:px-16 ">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                 {/* Mobile menu button*/}
@@ -46,7 +46,7 @@ export default function NavigasiBar() {
                                     <img
                                         className="h-8 w-auto"
                                         src={LogoWariga}
-                                        alt="Your Company"
+                                        alt="Logo Wariga"
                                     />
                                 </div>
                                 {/* Navigasi List Item */}
@@ -165,7 +165,7 @@ export default function NavigasiBar() {
                             </div>
                         </div>
                     </div>
-
+                    {/* Section Detail Dropdown */}
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
                             {navigation.map((item) => (

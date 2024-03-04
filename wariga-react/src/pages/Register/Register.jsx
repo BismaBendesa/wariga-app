@@ -51,7 +51,7 @@ export default function Register() {
                                 htmlFor="password"
                                 className="block text-sm font-medium leading-6"
                             >
-                                Password
+                                Tanggal Lahir
                             </label>
                             <div className="mt-2">
                                 <input
