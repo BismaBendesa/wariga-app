@@ -2,6 +2,7 @@
 import React from "react";
 import NavigasiBar from "../../components/Navbar/NavigasiBar";
 import Tokoh from "../../webp-img/tokoh-konsultasi.png";
+import Bintang from "../../webp-img/bintang/bintang_3x.webp";
 
 export default function Konsultasi() {
     return (
@@ -10,6 +11,11 @@ export default function Konsultasi() {
             <div className="px-4 sm:px-6 lg:px-16 text-white grid grid-cols-1 md:grid-cols-2 pt-16 gap-16 mb-12 md:mb-20">
                 <div>
                     <div className="flex flex-col gap-6">
+                        <img
+                            src={Bintang}
+                            alt="Gambar Bintang"
+                            className="fixed -z-10 top-20"
+                        />
                         <h1>Konsultasi</h1>
                         <p className="text-5xl font-bold">
                             Konsultasikan Keluhan Anda Dengan Ahli
