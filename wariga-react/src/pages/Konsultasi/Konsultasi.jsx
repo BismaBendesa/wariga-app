@@ -22,9 +22,12 @@ export default function Konsultasi() {
                         </p>
                     </div>
                     <div className="my-8">
-                        <button className="flex justify-center rounded-md bg-[#0056D7] px-6 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#6C93CD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        <a
+                            className="rounded-md bg-[#0056D7] px-6 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#6C93CD] "
+                            href="/konsultasi/booking/1"
+                        >
                             Booking Konsultasi
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div className="">

@@ -9,6 +9,10 @@ import ForgotPassword from "./pages/Password/ForgotPassword";
 import ResetPass from "./pages/Password/ResetPass";
 import Konsultasi from "./pages/Konsultasi/Konsultasi";
 import LandingPage from "./pages/LandingPage";
+import BookingKonsulPertama from "./pages/BookingKonsultasi/BookingKonsul_pertama";
+import BookingKonsulKedua from "./pages/BookingKonsultasi/BookingKonsul_kedua";
+import BookingKonsulKetiga from "./pages/BookingKonsultasi/BookingKonsul_ketiga";
+import TentangWariga from "./pages/TentangWariga/TentangWariga.1";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +42,22 @@ const router = createBrowserRouter([
             {
                 path: "/konsultasi",
                 element: <Konsultasi />,
+            },
+            {
+                path: "/konsultasi/booking/1",
+                element: <BookingKonsulPertama />,
+            },
+            {
+                path: "/konsultasi/booking/2",
+                element: <BookingKonsulKedua />,
+            },
+            {
+                path: "/konsultasi/booking/3",
+                element: <BookingKonsulKetiga />,
+            },
+            {
+                path: "/tentang-wariga",
+                element: <TentangWariga />,
             },
         ],
     },

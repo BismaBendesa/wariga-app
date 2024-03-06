@@ -8,11 +8,13 @@ export default function Register() {
         <>
             <div className="flex h-screen flex-col justify-center mx-[48px]">
                 <div className="sm:mx-auto sm:w-full text-white">
-                    <img
-                        className="mx-auto h-10 w-auto"
-                        src={logoWariga}
-                        alt="Your Company"
-                    />
+                    <a href="/wariga">
+                        <img
+                            className="mx-auto h-10 w-auto"
+                            src={logoWariga}
+                            alt="Your Company"
+                        />
+                    </a>
                     <h2 className="mt-8 text-center text-3xl md:text-5xl font-bold tracking-tight">
                         Daftarkan Akunmu di Wariga
                     </h2>
