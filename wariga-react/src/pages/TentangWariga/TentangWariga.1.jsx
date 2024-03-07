@@ -10,7 +10,7 @@ export default function TentangWariga() {
     return (
         <>
             <NavigasiBar />
-            <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-16 text-white py-8">
+            <div className="text-center sm:text-left mx-auto max-w-8xl px-4 sm:px-6 lg:px-16 text-white py-8">
                 <h3 className="font-bold text-transparent text-xl bg-clip-text bg-gradient-to-b from-[#0056D7] to-[#FFB400] ">
                     Tentang Wariga
                 </h3>
@@ -22,7 +22,7 @@ export default function TentangWariga() {
                 {/* section 1 -> kalender bali */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-4">
                     <div className="flex flex-col gap-4 leading-[164%] text-md">
-                        <h1 className="text-4xl font-bold">
+                        <h1 className="text-4xl md:text-6xl md:pr-6 font-bold text-center sm:text-left">
                             Wariga : Kalender Bali
                         </h1>
                         <p>
@@ -45,7 +45,7 @@ export default function TentangWariga() {
                             yadnya (upacara adat).
                         </p>
                     </div>
-                    <div className="flex justify-center gap-16 text-center">
+                    <div className="flex justify-center gap-8 sm:gap-16 text-center mb-6">
                         <div>
                             <img
                                 src={KalenderSekarang}
@@ -70,15 +70,17 @@ export default function TentangWariga() {
                 </div>
                 {/* section 2 -> kerangka wariga */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-4">
-                    <div className="flex flex-col gap-4 leading-[164%] text-md">
-                        <h1 className="text-4xl font-bold">Kerangka Wariga</h1>
+                    <div className="flex flex-col gap-2 sm:gap-4 leading-[164%] text-md">
+                        <h1 className="text-2xl sm:text-4xl font-bold">
+                            Kerangka Wariga
+                        </h1>
                         <p>
                             Wariga sendiri memiliki lima kerangka yang terdiri
                             dari wewaran, pawukon, pananggal atau pangelong,
                             sasih dan dawuh. Berikut adalah penjelasan
                             singkatnya:
                         </p>
-                        <ul className="list-disc list-[#FFB400] px-5">
+                        <ul className="list-disc list-[#FFB400] px-5 text-left">
                             <li>
                                 <span className="text-[#FFB400] ">Wewaran</span>{" "}
                                 berdasarkan siklus hari.
@@ -128,9 +130,9 @@ export default function TentangWariga() {
                 </div>
 
                 {/* Section 3 -> Daftar Kerangka Waeiga */}
-                <div className="flex flex-col gap-8 mx-auto text-center max-w-[800px] mt-24">
-                    <div className="flex flex-col gap-6 ">
-                        <h1 className="text-4xl font-bold">
+                <div className="flex flex-col gap-8 mx-auto text-center max-w-[800px] mt-12 sm:mt-20">
+                    <div className="flex flex-col gap-4 ">
+                        <h1 className="text-2xl sm:text-4xl font-bold">
                             Daftar Kerangka Wariga
                         </h1>
                         <div>

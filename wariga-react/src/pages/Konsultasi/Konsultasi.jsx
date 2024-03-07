@@ -8,7 +8,7 @@ export default function Konsultasi() {
     return (
         <>
             <NavigasiBar />
-            <div className="px-4 sm:px-6 lg:px-16 text-white grid grid-cols-1 md:grid-cols-2 pt-16 gap-16 mb-12 md:mb-20">
+            <div className="px-4 sm:px-6 lg:px-16 text-white grid grid-cols-1 md:grid-cols-2 pt-16 gap-4 sm:gap-16 mb-12 md:mb-20">
                 <div>
                     <div className="flex flex-col gap-6">
                         <img
@@ -16,18 +16,20 @@ export default function Konsultasi() {
                             alt="Gambar Bintang"
                             className="fixed -z-10 top-20"
                         />
-                        <h1>Konsultasi</h1>
-                        <p className="text-5xl font-bold">
+                        <h1 className="text-center sm:text-left text-[#0056D7] text-xl lg:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#0056D7] to-[#FFB400]">
+                            Konsultasi
+                        </h1>
+                        <p className="text-4xl md:text-5xl text-center sm:text-left font-bold">
                             Konsultasikan Keluhan Anda Dengan Ahli
                         </p>
-                        <p className="text-md font-light">
+                        <p className="text-center sm:text-left text-base sm:text-lg leading-[164%] font-light">
                             Ingin mengetahui lebih lanjut mengenai ramalan dan
                             keadaan anda? Mari konsultasikan hal tersebut dengan
                             ahli kami. Kami siap membantu menjawab seluruh
                             pertanyaan anda.
                         </p>
                     </div>
-                    <div className="my-8">
+                    <div className="my-8 flex justify-center sm:justify-start">
                         <a
                             className="rounded-md bg-[#0056D7] px-6 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#6C93CD] "
                             href="/konsultasi/booking/1"
@@ -41,15 +43,15 @@ export default function Konsultasi() {
                         <img src={Tokoh} alt="gambar bapak" width={400} />
                     </figure>
                     <figcaption className="text-center">
-                        <div className="mt-7">
-                            <h3 className="text-md">
+                        <div className="mt-6">
+                            <h3 className="text-base">
                                 I Wayan Arjuna Satya Puja S.Kom., M.Kom.
                             </h3>
-                            <p className="text-sm text-[#FFB400]">
+                            <p className="text-sm text-[#FFB400] mt-2">
                                 Pengamat Wariga
                             </p>
                         </div>
-                        <p className="text-sm font-light mt-4">
+                        <p className="text-xs sm:text-sm font-light mt-4 leading-[164%] ">
                             “Wariga itu ilmu yang leluhur kita miliki, sejatinya
                             alam semesta itu terus berputar dan akan
                             berubah-ubah setiap harinya. Manusia yang lahir juga
@@ -60,9 +62,11 @@ export default function Konsultasi() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-16 text-white mb-12">
                 <div className="w-full">
-                    <div className="mb-7">
-                        <h1 className="text-3xl mb-2">Riwayat Konsultasi </h1>
-                        <p>
+                    <div className="mb-4 text-center sm:text-left">
+                        <h1 className="text-xl sm:text-3xl font-bold mb-2">
+                            Riwayat Konsultasi{" "}
+                        </h1>
+                        <p className="text-sm sm:text-base">
                             Anda dapat melihat beberapa riwayat konsultasi anda
                             disini.
                         </p>
@@ -73,13 +77,13 @@ export default function Konsultasi() {
                         </p>
                         <div className="bg-[#1F1B46] p-5 rounded-lg">
                             {/* tabel akan datang */}
-                            <table className=" w-full text-center ">
+                            <table className=" w-full text-center text-sm sm:text-base">
                                 <tr className="">
-                                    <th className="py-6">No</th>
-                                    <th className="py-6">Nama</th>
-                                    <th className="py-6">Waktu</th>
-                                    <th className="py-6">Tanggal</th>
-                                    <th className="py-6">Status</th>
+                                    <th className="pb-6">No</th>
+                                    <th className="pb-6">Nama</th>
+                                    <th className="pb-6">Waktu</th>
+                                    <th className="pb-6">Tanggal</th>
+                                    <th className="pb-6">Status</th>
                                 </tr>
                                 <tr className="bg-[#02205E]">
                                     <td className="py-5">1</td>
@@ -116,13 +120,13 @@ export default function Konsultasi() {
                         <p className="mb-4 text-sm text-[#A6A6A6]">Riwayat</p>
                         <div className="bg-[#1F1B46] p-5 rounded-lg">
                             {/* tabel akan datang */}
-                            <table className=" w-full text-center">
+                            <table className=" w-full text-center text-sm sm:text-base">
                                 <tr className="">
-                                    <th className="py-6">No</th>
-                                    <th className="py-6">Nama</th>
-                                    <th className="py-6">Waktu</th>
-                                    <th className="py-6">Tanggal</th>
-                                    <th className="py-6">Status</th>
+                                    <th className="pb-6">No</th>
+                                    <th className="pb-6">Nama</th>
+                                    <th className="pb-6">Waktu</th>
+                                    <th className="pb-6">Tanggal</th>
+                                    <th className="pb-6">Status</th>
                                 </tr>
                                 <tr className="bg-[#02205E]">
                                     <td className="py-5">1</td>
@@ -157,14 +161,16 @@ export default function Konsultasi() {
                     </div>
                 </div>
                 <div className="bg-[#1F1B46] rounded-t-2xl">
-                    <div className="bg-[#10398E] px-8 py-4  rounded-t-2xl">
-                        <h1 className="text-3xl mb-2">Riwayat Konsultasi </h1>
-                        <p className="font-light">
+                    <div className="bg-[#10398E] px-8 py-4 rounded-t-2xl text-center sm:text-left">
+                        <h1 className="text-xl sm:text-3xl font-bold mb-2">
+                            Riwayat Konsultasi{" "}
+                        </h1>
+                        <p className="text-sm sm:text-base font-light">
                             Anda dapat melihat beberapa riwayat konsultasi anda
                             disini.
                         </p>
                     </div>
-                    <div className="flex flex-col gap-8 px-8 py-6 text-[#D9D9D9]">
+                    <div className="flex flex-col gap-8 mx-4 sm:mx-8 text-white  my-5 text-[#D9D9D9]">
                         <div>
                             <h4 className="text-sm text-[#FFB400]">
                                 Konsultan
@@ -199,7 +205,7 @@ export default function Konsultasi() {
                         </div>
                         <div>
                             <h4 className="text-sm text-[#FFB400]">Keluhan</h4>
-                            <p>
+                            <p className="text-sm sm:text-base leading-[164%] ">
                                 Setiap kali sakit kepala datang, rasanya seperti
                                 seluruh dunia berputar dan sulit untuk fokus.
                                 Bahkan setelah istirahat yang cukup, rasanya
@@ -216,7 +222,7 @@ export default function Konsultasi() {
                             <h4 className="text-sm text-[#FFB400]">
                                 Konsultan
                             </h4>
-                            <p>
+                            <p className="text-sm sm:text-base leading-[164%] ">
                                 Ditinjau dari kelahiran anda, anda memiliki
                                 riwayat penyakit yang signifikan di bagiaan
                                 kepala. karena karakter anda adalah Panes, Anda

@@ -172,7 +172,7 @@ export default function Dashboard() {
             <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-16 text-white">
                 {/* section dashboard */}
                 <div>
-                    <h1 className="py-6 text-center sm:text-left text-[#0056D7] text-xl lg:text-2xl lg:pb-12 ">
+                    <h1 className="text-xl text-center sm:text-left font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#0056D7] to-[#FFB400] my-6 lg:text-2xl md:mb-12">
                         Dashboard
                     </h1>
                     <img
@@ -182,101 +182,102 @@ export default function Dashboard() {
                     />
                 </div>
                 {/* Balinese Date User */}
-                <div className="flex flex-col-reverse gap-2 lg:grid lg:grid-cols-12 text-black mb-14">
-                    <div className="col-span-12 rounded lg:col-span-8 ">
-                        <div className="">
-                            <div className="mb-6">
+                <div className="grid gap-2 lg:grid lg:grid-cols-12 text-black mb-8 sm:mb-14">
+                    <div className="order-last lg:order-first col-span-12 rounded lg:col-span-8 ">
+                        <div className="flex flex-col items-center sm:items-start">
+                            <div className="my-6 text-center sm:text-left">
                                 <h3 className="text-base text-[#FFB400] ">
                                     Tanggal Lahir:
                                 </h3>
-                                <p className="text-lg font-bold text-white ">
+                                <p className="text-base sm:text-lg font-bold text-white ">
                                     Senin, 09 Oktober 2004
                                 </p>
                             </div>
-                            <div className="flex flex-wrap gap-x-3 gap-y-8">
-                                <div className="w-32">
+                            {/* eka wara-wuku */}
+                            <div className="flex flex-wrap justify-center sm:justify-start gap-x-2 gap-y-8 text-center sm:text-left">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Eka Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         {wewaran.asta_wara}
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Dwi Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Tri Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Catur Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Panca Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Sad Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Sapta Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Asta Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Sanga Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Dasa Wara:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
                                     </p>
                                 </div>
-                                <div className="w-32">
+                                <div className="max-w-24 sm:max-w-32 w-full">
                                     <h3 className="text-base text-[#FFB400] ">
-                                        Tanggal Lahir:
+                                        Wuku:
                                     </h3>
                                     <p className="text-lg font-bold text-white ">
                                         Sinta
@@ -284,7 +285,7 @@ export default function Dashboard() {
                                 </div>
                             </div>
                         </div>
-                        <div className="my-8">
+                        <div className="my-8 flex justify-center sm:justify-start">
                             <button className="flex justify-center rounded-md bg-[#0056D7] px-6 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#6C93CD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                                 Pelajari lebih lanjut
                             </button>
@@ -312,59 +313,62 @@ export default function Dashboard() {
                     <div className="bg-[#10398E] text-[#E2A000] text-2xl px-8 py-4 font-bold rounded-t-2xl">
                         <p>Penentuan Karakter</p>
                     </div>
-                    <div className="flex flex-col-reverse gap-6 lg:grid lg:grid-cols-6 text-white px-8 py-12 ">
-                        <div className="col-span-3">
-                            <div className="flex gap-6 w-full m-auto">
-                                <div className="flex flex-col items-center bg-[#10398E] text-xl font-thin rounded-lg text-center px-24 py-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 text-white mx-4 sm:mx-8 my-5">
+                        <div className="order-last lg:order-first flex flex-col items-center md:items-start my-8">
+                            {/* Tis Anget */}
+                            <div className="flex gap-6">
+                                <div className="flex flex-col items-center bg-[#10398E] text-xl font-light leading-[164%] rounded-lg text-center max-w-24 w-full px-16 py-8 sm:px-24 sm:py-12">
                                     <p>Tis</p>
                                 </div>
-                                <div className="flex flex-col items-center bg-[#FFB400] text-xl font-bold rounded-lg text-center px-24 py-10">
+                                <div className="flex flex-col items-center bg-[#FFB400] text-xl font-bold rounded-lg text-center max-w-24 w-full px-16 py-8 sm:px-24 sm:py-12">
                                     <p>Anget</p>
                                 </div>
                             </div>
-                            <div className="mt-6">
-                                <h4 className="text-lg font-medium">Tis</h4>
-
-                                <p className="font-light mb-6">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Soluta unde officiis odit
-                                    ut tempora aspernatur est asperiores
-                                    ratione, voluptatem eius repudiandae rem
-                                    iste quod itaque illum dignissimos velit
-                                    atque aperiam accusantium ea! Nesciunt
-                                    eveniet nostrum explicabo, at officiis
-                                    natus, exercitationem hic mollitia saepe
-                                    enim aperiam ratione quis deleniti beatae
-                                    quasi illum eligendi esse velit culpa. Fugit
-                                    similique, mollitia ipsum excepturi incidunt
-                                </p>
-                                <p className="font-light">
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. A consequuntur reiciendis
-                                    deserunt odio similique ipsum perferendis
-                                    recusandae voluptas atque accusantium
-                                    dolorum repellat illo debitis, doloremque
-                                    aliquid voluptatum nihil minima neque modi
-                                    ducimus! Nam, mollitia officiis? Quibusdam,
-                                    laboriosam! Nisi dicta at, consequuntur hic
-                                </p>
+                            {/* Penjelasan tis / anget */}
+                            <div className="mt-5">
+                                <h4 className="text-base sm:text-lg text-center sm:text-left font-medium">
+                                    Anget
+                                </h4>
+                                <div className="flex flex-col gap-4 text-center sm:text-left leading-[164%] ">
+                                    <p className="font-light">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Soluta unde officiis
+                                        odit ut tempora aspernatur est
+                                        asperiores ratione, voluptatem eius
+                                        repudiandae rem iste quod itaque illum
+                                        dignissimos velit atque aperiam
+                                        accusantium ea! Nesciunt
+                                    </p>
+                                    <p className="font-light">
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. A consequuntur
+                                        reiciendis deserunt odio similique ipsum
+                                        perferendis recusandae voluptas atque
+                                        accusantium dolorum repellat illo
+                                        debitis, doloremque aliquid voluptatum
+                                        nihil minima neque modi ducimus! Nam,
+                                        mollitia officiis? Quibusdam,
+                                        laboriosam! Nisi dicta at, consequuntur
+                                        hic
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-span-3 m-auto w-4/5">
+                        <div className="m-auto w-4/5">
                             <img src={MataAngin} alt="" />
                         </div>
                     </div>
                 </div>
                 {/* section watak dan penyakit */}
-                <div className="gap-6 lg:grid lg:grid-cols-12 text-black mb-12 my-8 rounded-t-2xl">
-                    <div className="col-span-12 lg:col-span-6 ">
-                        <div className="bg-[#10398E] text-[#E2A000] text-2xl px-8 py-4 font-bold rounded-t-2xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-black mb-12 my-8 rounded-t-2xl">
+                    <div className="md:col-span-1">
+                        <div className="bg-[#10398E] text-[#E2A000] text-xl sm:text-2xl text-center sm:text-left m-w-full px-4 sm:px-8 py-4 font-bold rounded-t-2xl">
                             <p>Watak</p>
                         </div>
-                        <div className="bg-[#1F1B46] px-8 py-4 text-white">
-                            <div className="py-4">
+                        <div className="flex flex-col gap-8 bg-[#1F1B46] mx-4 my-4 sm:mx-8 text-white text-center sm:text-left">
+                            <div className="">
                                 <h4 className="text-lg">Keras Kepala</h4>
-                                <p className="text-base font-thin">
+                                <p className="text-base font-light leading-[164%]">
                                     Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Aperiam nobis corrupti
                                     nesciunt eos fugiat fuga asperiores quis!
@@ -373,9 +377,9 @@ export default function Dashboard() {
                                     repudiandae totam?
                                 </p>
                             </div>
-                            <div className="py-4">
+                            <div className="">
                                 <h4 className="text-lg">Keras Kepala</h4>
-                                <p className="text-base font-thin">
+                                <p className="text-base font-light leading-[164%]">
                                     Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Aperiam nobis corrupti
                                     nesciunt eos fugiat fuga asperiores quis!
@@ -384,9 +388,9 @@ export default function Dashboard() {
                                     repudiandae totam?
                                 </p>
                             </div>
-                            <div className="py-4">
+                            <div className="">
                                 <h4 className="text-lg">Keras Kepala</h4>
-                                <p className="text-base font-thin">
+                                <p className="text-base font-light leading-[164%]">
                                     Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Aperiam nobis corrupti
                                     nesciunt eos fugiat fuga asperiores quis!
@@ -395,9 +399,9 @@ export default function Dashboard() {
                                     repudiandae totam?
                                 </p>
                             </div>
-                            <div className="py-4">
+                            <div className="">
                                 <h4 className="text-lg">Keras Kepala</h4>
-                                <p className="text-base font-thin">
+                                <p className="text-base font-light leading-[164%]">
                                     Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Aperiam nobis corrupti
                                     nesciunt eos fugiat fuga asperiores quis!
@@ -408,14 +412,14 @@ export default function Dashboard() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-12 lg:col-span-6 ">
-                        <div className="bg-[#10398E] text-[#E2A000] text-2xl px-8 py-4 font-bold rounded-t-2xl">
+                    <div className="md:col-span-1">
+                        <div className="bg-[#10398E] text-[#E2A000] text-xl sm:text-2xl text-center sm:text-left m-w-full px-4 sm:px-8 py-4 font-bold rounded-t-2xl">
                             <p>Penyakit</p>
                         </div>
-                        <div className="bg-[#1F1B46] px-8 py-4 text-white">
-                            <div className="py-4">
+                        <div className="flex flex-col gap-8 bg-[#1F1B46]mx-4 my-4 sm:mx-8 text-white text-center sm:text-left">
+                            <div className="">
                                 <h4 className="text-lg">Keras Kepala</h4>
-                                <p className="text-base font-thin">
+                                <p className="text-base font-light leading-[164%]">
                                     Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Aperiam nobis corrupti
                                     nesciunt eos fugiat fuga asperiores quis!
@@ -424,9 +428,9 @@ export default function Dashboard() {
                                     repudiandae totam?
                                 </p>
                             </div>
-                            <div className="py-4">
+                            <div className="">
                                 <h4 className="text-lg">Keras Kepala</h4>
-                                <p className="text-base font-thin">
+                                <p className="text-base font-light leading-[164%]">
                                     Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Aperiam nobis corrupti
                                     nesciunt eos fugiat fuga asperiores quis!
@@ -435,9 +439,9 @@ export default function Dashboard() {
                                     repudiandae totam?
                                 </p>
                             </div>
-                            <div className="py-4">
+                            <div className="">
                                 <h4 className="text-lg">Keras Kepala</h4>
-                                <p className="text-base font-thin">
+                                <p className="text-base font-light leading-[164%]">
                                     Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Aperiam nobis corrupti
                                     nesciunt eos fugiat fuga asperiores quis!
@@ -446,9 +450,9 @@ export default function Dashboard() {
                                     repudiandae totam?
                                 </p>
                             </div>
-                            <div className="py-4">
+                            <div className="">
                                 <h4 className="text-lg">Keras Kepala</h4>
-                                <p className="text-base font-thin">
+                                <p className="text-base font-light leading-[164%]">
                                     Lorem ipsum dolor sit, amet consectetur
                                     adipisicing elit. Aperiam nobis corrupti
                                     nesciunt eos fugiat fuga asperiores quis!
@@ -464,11 +468,11 @@ export default function Dashboard() {
                 {/* section kesimpulan */}
                 <div className="gap-6 lg:grid lg:grid-cols-12 text-black mb-14 my-8 rounded-t-2xl">
                     <div className="col-span-12 ">
-                        <div className="bg-[#10398E] text-[#E2A000] text-2xl px-8 py-4 font-bold rounded-t-2xl">
+                        <div className="bg-[#10398E] text-[#E2A000] text-xl sm:text-2xl text-center sm:text-left m-w-full px-4 sm:px-8 py-4 font-bold rounded-t-2xl">
                             <p>Kesimpulan</p>
                         </div>
-                        <div className="bg-[#1F1B46] px-8 py-4 text-white">
-                            <p className="text-base font-thin">
+                        <div className="bg-[#1F1B46] mx-4 my-4 sm:mx-8 text-white text-center sm:text-left">
+                            <p className="text-base font-light leading-[164%]">
                                 Lorem ipsum dolor sit, amet consectetur
                                 adipisicing elit. Aperiam nobis corrupti
                                 nesciunt eos fugiat fuga asperiores quis!

@@ -6,7 +6,7 @@ import logoWariga from "../../webp-img/logoWariga.webp";
 export default function Register() {
     return (
         <>
-            <div className="flex h-screen flex-col justify-center mx-[48px]">
+            <div className="flex flex-col justify-center mx-8 my-8">
                 <div className="sm:mx-auto sm:w-full text-white">
                     <a href="/wariga">
                         <img
@@ -18,7 +18,7 @@ export default function Register() {
                     <h2 className="mt-8 text-center text-3xl md:text-5xl font-bold tracking-tight">
                         Daftarkan Akunmu di Wariga
                     </h2>
-                    <p className="md:mt-8 mt-4 text-center font-light text-md md:text-xl">
+                    <p className="md:mt-8 mt-2 text-center font-light text-md md:text-xl">
                         Anda sudah punya akun?{" "}
                         <span className="text-[#FFB400] font-bold">
                             <a href="/login">Login Disini</a>

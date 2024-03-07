@@ -7,43 +7,43 @@ export default function BookingKonsulPertama() {
     return (
         <>
             <NavigasiBar />
-            <div className="flex flex-col gap-8 max-w-7xl w-full mx-auto text-black text-white px-8 py-16">
+            <div className="flex flex-col gap-8 max-w-7xl w-full mx-auto text-black text-white px-4 sm:px-6 lg:px-16 py-16">
                 {/* Judul Pemesanan Konsultasi */}
-                <div className="flex flex-col gap-3 items-center">
+                <div className="flex flex-col gap-3 items-center text-center sm:text-left">
                     <img
                         src={Bintang}
                         alt="Gambar Bintang"
                         className="fixed -z-10 mt-[-100px]"
                     />
-                    <h3 className="font-bold text-transparent text-xl bg-clip-text bg-gradient-to-b from-[#0056D7] to-[#FFB400] ">
+                    <h3 className="font-bold text-transparent text-lg sm:text-xl bg-clip-text bg-gradient-to-b from-[#0056D7] to-[#FFB400] ">
                         <a href="/konsultasi">Konsultasi</a> / Pemesanan
                         Konsultasi
                     </h3>
-                    <h1 className="text-4xl font-bold">
+                    <h1 className="text-2xl sm:text-4xl font-bold">
                         Pemesanan Sesi Konsultasi
                     </h1>
-                    <p className="text-lg font-light">
+                    <p className="text-sm sm:text-lg font-light">
                         Tolong isikan data dibawah ini untuk melakukan pemesanan
                     </p>
                 </div>
                 {/* Tahapan Konsultasi */}
                 <div className="flex justify-between items-center">
-                    <div className="flex flex-col gap-2 items-center text-xl font-bold text-center">
-                        <div className="inline-block bg-white max-w-[48px] w-full max-h-[48px] h-full text-[#13101F] rounded-full p-2.5 text-center">
+                    <div className="flex flex-col gap-2 items-center text-sm sm:text-xl font-bold text-center">
+                        <div className="bg-white max-w-[48px] w-full text-[#13101F]  rounded-full p-3.5 sm:p-2.5 text-center">
                             1
                         </div>
-                        <a href="/konsultasi/booking/1">Data Dasar</a>
+                        <a href="/konsultasi/booking/1">Biodata</a>
                     </div>
-                    <div className="w-[300px] h-[10px] bg-gradient-to-r from-white/0 to-white/80 rounded-full "></div>
-                    <div className="flex flex-col gap-2 items-center text-xl font-bold">
-                        <div className="inline-block bg-[#0056D6] max-w-[48px] w-full max-h-[48px] h-full text-white rounded-full p-2.5 text-center ">
+                    <div className="hidden md:block max-w-[300px] w-full h-[10px] bg-gradient-to-r from-white/0 to-white/80 rounded-full "></div>
+                    <div className="flex flex-col gap-2 items-center text-sm sm:text-xl font-bold">
+                        <div className="bg-[#0056D6] max-w-[48px] w-full text-white rounded-full p-3.5 sm:p-2.5 text-center">
                             2
                         </div>
                         <p>Keluhan</p>
                     </div>
-                    <div className="w-[300px] h-[10px] bg-gradient-to-r from-white/0 to-white/80 rounded-full "></div>
-                    <div className="flex flex-col gap-2 items-center text-xl font-bold">
-                        <div className="inline-block bg-white max-w-[48px] w-full max-h-[48px] h-full text-[#13101F] rounded-full p-2.5 text-center">
+                    <div className="hidden md:block max-w-[300px] w-full h-[10px] bg-gradient-to-r from-white/0 to-white/80 rounded-full "></div>
+                    <div className="flex flex-col gap-2 items-center text-sm sm:text-xl font-bold">
+                        <div className="bg-white max-w-[48px] w-full text-[#13101F] rounded-full p-3.5 sm:p-2.5 text-center">
                             3
                         </div>
                         <a href="/konsultasi/booking/3">Pembayaran</a>
@@ -64,7 +64,7 @@ export default function BookingKonsulPertama() {
                                     >
                                         Waktu Konsultasi (WITA)
                                     </label>
-                                    <div className="mt-2 grid grid-cols-4 md:grid-cols-6 gap-4 text-center">
+                                    <div className="mt-2 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 text-center">
                                         <div
                                             id="waktuKonsultasi"
                                             className="rounded-md border-0 py-3 px-5 shadow-sm ring-1 ring-[#BFBFBF] text-white sm:text-sm sm:leading-6 hover:bg-[#E2A000] hover:ring-[#E2A000] cursor-pointer"
